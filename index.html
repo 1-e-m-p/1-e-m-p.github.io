@@ -8,7 +8,7 @@
   Add a slide by copying one line inside "slides".
 
   Stage names that get their own colour:
-  sketch · prototype · failure · process · assembly · build · data · final · test · doc
+  sketch · prototype · failure · process · assembly · build · data · final · test · doc · bonus
 
   TO PUBLISH:
   GitHub Desktop > summary > Commit to main > Push origin
@@ -22,6 +22,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emilie Pereira — Mechanical Engineering</title>
 <meta name="description" content="Mechanical engineering student at the University of Maryland. Fabrication, CAD, and embedded systems projects.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -282,9 +285,8 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
     <div class="cols rv">
       <div>
         <p>I'm a sophomore studying mechanical engineering at the University of
-        Maryland, taking Statics and Differential Equations this fall. Most of what's
-        above was built in high school, which is where I found out I like the part
-        where a drawing turns into an object that either works or doesn't.</p>
+        Maryland. What keeps me hooked is the part where a drawing turns into an
+        object that either works or doesn't.</p>
         <p>What I'm working toward is product design engineering — the role between
         how something looks and how it actually gets manufactured. Right now that
         means getting fast in CAD, learning machining hands-on, and finding shop work
@@ -349,8 +351,7 @@ const PROJECTS = [
     year: "2024–2025",
     body: [
       "A small-scale fire detection and suppression system built around an Arduino, a heat sensor, a smoke sensor, and a water pump. I furnished the interior with scale furniture so the sensors would trigger under something closer to real conditions than an empty box.",
-      "When the heat and smoke sensors picked up a fire, they set off a beeping alarm and triggered the suppression system at the same time.",
-      "Most of the work was in sensor placement. Where smoke actually collects is not where you'd guess from the outside."
+      "The hard part was getting the chain of reactions to fire in the right order — heat and smoke sensing, then the alarm, then the suppression system triggering — without knowing ahead of time where smoke would actually travel once it was inside the house, which is what made sensor placement the real problem. It worked: the system detected the fire and started the suppression sequence as soon as the candle was lit."
     ],
     slides: [
       {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home.jpg",    cap:"Floor plan, furniture and dimensions"},
@@ -405,7 +406,7 @@ const PROJECTS = [
     title: "Hydraulic arm & robotics builds",
     year: "2023–2024",
     body: [
-      "A syringe-driven hydraulic arm, built for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. Ours took first place, with a cash prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
+      "A syringe-driven hydraulic arm, designed and built solo for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. I went up against 10 other entries and took first place, with a cash prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
     ],
     slides: [
       {type:"img", stage:"sketch", src:"images/hydrolic arm sketch.jpg",     cap:"Linkage and cylinder layout"},
