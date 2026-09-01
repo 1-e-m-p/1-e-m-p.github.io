@@ -490,7 +490,10 @@ document.querySelectorAll('[data-carousel]').forEach(root => {
     steps.forEach((b,k)  => b.setAttribute('aria-current', k===i));
     thumbs.forEach((b,k) => b.setAttribute('aria-current', k===i));
     const t = thumbs[i];
-    if (t) t.scrollIntoView({block:'nearest', inline:'nearest', behavior:'smooth'});
+    if (t) {
+      const strip = root.querySelector('.strip');
+      strip.scrollTo({left: t.offsetLeft - (strip.clientWidth - t.clientWidth) / 2, behavior: 'smooth'});
+    }
   }
 
   prev.addEventListener('click', () => show(i-1));
