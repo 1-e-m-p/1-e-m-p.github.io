@@ -247,7 +247,6 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
   <section class="hero" id="top">
     <div>
       <h1 id="heroName">Emilie Pereira</h1>
-      <!-- EDIT: your own words -->
       <p class="role">Mechanical engineering · University of Maryland</p>
       <p class="lede rv">Below is what I've built so far — the sketches, the
         prototypes, the prints that failed, and what the finished thing ended up
@@ -258,8 +257,7 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
         <li>Onshape · Creo · Arduino</li>
       </ul>
       <div class="cta-row rv">
-        <!-- EDIT: put resume.pdf in the same folder as index.html -->
-        <a class="btn btn-solid" href="resume.pdf" download>
+        <a class="btn btn-solid" href="resume.pdf" download="Emilie_Pereira_Resume.pdf">
           <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
           Download resume
         </a>
@@ -283,7 +281,6 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
     <div class="band-head rv"><h2>About</h2></div>
     <div class="cols rv">
       <div>
-        <!-- EDIT -->
         <p>I'm a sophomore studying mechanical engineering at the University of
         Maryland, taking Statics and Differential Equations this fall. Most of what's
         above was built in high school, which is where I found out I like the part
@@ -291,7 +288,9 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
         <p>What I'm working toward is product design engineering — the role between
         how something looks and how it actually gets manufactured. Right now that
         means getting fast in CAD, learning machining hands-on, and finding shop work
-        where I can watch parts get made.</p>
+        where I can learn how parts are actually made — and use that to understand
+        what's actually possible and what's off the table when I'm the one designing
+        a product.</p>
         <p>Looking for a Summer 2027 internship in consumer hardware, product
         design, or manufacturing.</p>
       </div>
@@ -315,13 +314,13 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
       <p style="max-width:52ch">Open to internships, shop work, and talking with
       anyone who makes physical products for a living.</p>
       <div class="links">
-        <!-- EDIT: swap in your UMD email and real LinkedIn URL -->
-        <a href="mailto:emilie.pereira2006@gmail.com">Email</a>
+        <a href="mailto:emp1@terpmail.umd.edu">Email</a>
         <a href="tel:+12403167454">240-316-7454</a>
-        <a href="https://linkedin.com/in/">LinkedIn</a>
+        <a href="https://linkedin.com/in/emilie-pereira-b315673a5">LinkedIn</a>
+        <a href="https://app.joinhandshake.com/profiles/g3kmwk">Handshake</a>
       </div>
       <div class="cta-row">
-        <a class="btn btn-solid" href="resume.pdf" download>
+        <a class="btn btn-solid" href="resume.pdf" download="Emilie_Pereira_Resume.pdf">
           <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
           Download resume
         </a>
@@ -350,20 +349,21 @@ const PROJECTS = [
     year: "2024–2025",
     body: [
       "A small-scale fire detection and suppression system built around an Arduino, a heat sensor, a smoke sensor, and a water pump. I furnished the interior with scale furniture so the sensors would trigger under something closer to real conditions than an empty box.",
+      "When the heat and smoke sensors picked up a fire, they set off a beeping alarm and triggered the suppression system at the same time.",
       "Most of the work was in sensor placement. Where smoke actually collects is not where you'd guess from the outside."
     ],
     slides: [
-      {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home.jpg",    cap:"First layout, room by room"},
-      {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home(1).jpg", cap:"Sensor and pump placement"},
-      {type:"img", stage:"prototype", src:"images/fire supression home prototype.jpg",            cap:"Structure going up"},
-      {type:"img", stage:"prototype", src:"images/fire supression home prototype(1).jpg",         cap:"Interior walls in"},
-      {type:"img", stage:"prototype", src:"images/fire supression home prototype(2).jpg",         cap:"Wiring routed"},
-      {type:"img", stage:"prototype", src:"images/fire supression home prototype(3).jpg",         cap:"Furnished for testing"},
-      {type:"img", stage:"final",     src:"images/final front view of fire supression.jpg",       cap:"Front"},
-      {type:"img", stage:"final",     src:"images/final normal view of fire supression.jpg",      cap:"Three-quarter"},
-      {type:"img", stage:"final",     src:"images/final top view of fire supression.jpg",         cap:"Top, sensor layout"},
-      {type:"img", stage:"final",     src:"images/final top view of fire supression(1).jpg",      cap:"Top, pump side"},
-      {type:"img", stage:"final",     src:"images/supression system_.jpg",                        cap:"Pump and plumbing detail"},
+      {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home.jpg",    cap:"Floor plan, furniture and dimensions"},
+      {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home(1).jpg", cap:"Revised layout, doorways added"},
+      {type:"img", stage:"prototype", src:"images/fire supression home prototype.jpg",            cap:"Cardboard prototype, walls glued and furniture blocked in"},
+      {type:"img", stage:"prototype", src:"images/fire supression home prototype(1).jpg",         cap:"Cardboard prototype, exterior shell with windows cut and roof hinged"},
+      {type:"img", stage:"prototype", src:"images/fire supression home prototype(2).jpg",         cap:"Cardboard prototype, closed up with door and vent cut in"},
+      {type:"img", stage:"prototype", src:"images/fire supression home prototype(3).jpg",         cap:"Cardboard prototype, more furniture placed"},
+      {type:"img", stage:"final",     src:"images/final front view of fire supression.jpg",       cap:"Final build, interior close-up with bed and desk"},
+      {type:"img", stage:"final",     src:"images/final normal view of fire supression.jpg",      cap:"Final build, exterior with window and door cutouts"},
+      {type:"img", stage:"final",     src:"images/final top view of fire supression.jpg",         cap:"Final build, top-down interior"},
+      {type:"img", stage:"final",     src:"images/final top view of fire supression(1).jpg",      cap:"Final build, both rooms with wiring visible"},
+      {type:"img", stage:"final",     src:"images/supression system_.jpg",                        cap:"Tubing routed for the pump subsystem"},
       {type:"img", stage:"doc",       src:"images/supression system poster.jpg",                  cap:"Project poster"},
       {type:"vid", stage:"test",      src:"media/Video fire suppression.mp4",                     cap:"Detection and suppression, end to end"}
     ]
@@ -390,21 +390,22 @@ const PROJECTS = [
     title: "Wooden tower load test",
     year: "2024",
     body: [
-      "A thin wooden tower built to carry as much load as possible for as little mass as possible. The final build weighed 0.195 lb and held roughly 90 lb before failure — about 460 times its own weight.",
+      "A thin wooden tower built to carry as much load as possible for as little mass as possible. The final build weighed 0.195 lb and held roughly 90 lb — about 460 times its own weight — stacked in textbooks.",
+      "The tower itself never broke. The test ended when the stack of textbooks got tall enough to start tipping and we couldn't safely add more.",
       "The constraint was material, not cleverness. Getting the load path straight down through the members, and keeping the joints from becoming the weak point, was the whole problem."
     ],
     slides: [
       {type:"img", stage:"build", src:"images/tower front view.jpg",       cap:"Front elevation"},
       {type:"img", stage:"build", src:"images/tower side view.jpg",        cap:"Side elevation"},
       {type:"img", stage:"data",  src:"images/tower weight.jpg",           cap:"0.195 lb before loading"},
-      {type:"vid", stage:"test",  src:"media/tower integrity video.mp4",   cap:"Loading to failure"}
+      {type:"vid", stage:"test",  src:"media/tower integrity video.mp4",   cap:"Loading test — the tower held, the book stack didn't"}
     ]
   },
   {
     title: "Hydraulic arm & robotics builds",
     year: "2023–2024",
     body: [
-      "A syringe-driven hydraulic arm, designed and built for competition and judged first, with a cash prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
+      "A syringe-driven hydraulic arm, built for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. Ours took first place, with a cash prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
     ],
     slides: [
       {type:"img", stage:"sketch", src:"images/hydrolic arm sketch.jpg",     cap:"Linkage and cylinder layout"},
