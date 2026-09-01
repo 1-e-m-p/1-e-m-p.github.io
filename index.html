@@ -33,7 +33,7 @@
   --panel:#FFF; --accent:#33546B; --accent-dk:#223B4D; --warm:#A9612F;
   --slate1:#8E9AA6; --slate2:#63727F;
   --s-sketch:#5A6068; --s-proto:#33546B; --s-fail:#A9612F;
-  --s-final:#2E6B57; --s-test:#5C4A7D; --s-data:#8A6D1F;
+  --s-final:#2E6B57; --s-test:#5C4A7D; --s-data:#8A6D1F; --s-bonus:#9C3B54;
   --wrap:1180px; --pad:clamp(1.15rem,4vw,3rem);
   --ease:cubic-bezier(.22,.68,.26,1);
 }
@@ -155,6 +155,7 @@ h1,h2,h3,.ui{font-family:Archivo,system-ui,sans-serif}
 .tag.test{background:var(--s-test)} .tag.data{background:var(--s-data)}
 .tag.process{background:var(--s-proto)} .tag.assembly{background:var(--s-proto)}
 .tag.build{background:var(--s-sketch)} .tag.doc{background:var(--s-sketch)}
+.tag.bonus{background:var(--s-bonus)}
 .cap .txt{color:var(--muted);font-size:.9375rem}
 .cap .num{margin-left:auto;font-family:Archivo;font-size:.75rem;color:var(--muted);
   font-variant-numeric:tabular-nums}
@@ -341,7 +342,7 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
    PROJECT DATA  —  this is the only part you need to edit
    type: "img" or "vid"
    stage: sketch | prototype | failure | process | assembly |
-          build | data | final | test | doc
+          build | data | final | test | doc | bonus
    ============================================================ */
 const PROJECTS = [
   {
@@ -408,7 +409,7 @@ const PROJECTS = [
     slides: [
       {type:"img", stage:"sketch", src:"images/hydrolic arm sketch.jpg",     cap:"Linkage and cylinder layout"},
       {type:"img", stage:"final",  src:"images/hydrolic arm.jpg",            cap:"Competition build"},
-      {type:"vid", stage:"test",   src:"media/robot on line test.mp4",       cap:"Line-following run"}
+      {type:"vid", stage:"bonus",  src:"media/robot on line test.mp4",       cap:"Bonus clip — line-following run"}
     ]
   }
 ];
