@@ -340,6 +340,9 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
 </div>
 
 <script>
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+if (!location.hash) window.scrollTo(0, 0);
+
 /* ============================================================
    PROJECT DATA  —  this is the only part you need to edit
    type: "img" or "vid"
