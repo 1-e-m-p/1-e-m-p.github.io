@@ -8,7 +8,7 @@
   Add a slide by copying one line inside "slides".
 
   Stage names that get their own colour:
-  sketch · prototype · failure · process · assembly · build · data · final · test · doc · bonus
+  sketch · prototype · failure · process · assembly · build · data · final · test · doc · bonus · research
 
   TO PUBLISH:
   GitHub Desktop > summary > Commit to main > Push origin
@@ -33,10 +33,10 @@
 <style>
 :root{
   --bg:#F1F2F1; --ink:#14171A; --muted:#5F666D; --hair:#D4D7D3;
-  --panel:#FFF; --accent:#33546B; --accent-dk:#223B4D; --warm:#A9612F;
+  --panel:#FFF; --accent:#E21833; --accent-dk:#A11226; --warm:#A9612F;
   --slate1:#8E9AA6; --slate2:#63727F;
   --s-sketch:#5A6068; --s-proto:#33546B; --s-fail:#A9612F;
-  --s-final:#2E6B57; --s-test:#5C4A7D; --s-data:#8A6D1F; --s-bonus:#9C3B54;
+  --s-final:#2E6B57; --s-test:#5C4A7D; --s-data:#8A6D1F; --s-bonus:#9C3B54; --s-research:#2B6F77;
   --wrap:1180px; --pad:clamp(1.15rem,4vw,3rem);
   --ease:cubic-bezier(.22,.68,.26,1);
 }
@@ -159,6 +159,7 @@ h1,h2,h3,.ui{font-family:Archivo,system-ui,sans-serif}
 .tag.process{background:var(--s-proto)} .tag.assembly{background:var(--s-proto)}
 .tag.build{background:var(--s-sketch)} .tag.doc{background:var(--s-sketch)}
 .tag.bonus{background:var(--s-bonus)}
+.tag.research{background:var(--s-research)}
 .cap .txt{color:var(--muted);font-size:.9375rem}
 .cap .num{margin-left:auto;font-family:Archivo;font-size:.75rem;color:var(--muted);
   font-variant-numeric:tabular-nums}
@@ -347,7 +348,7 @@ if (!location.hash) window.scrollTo(0, 0);
    PROJECT DATA  —  this is the only part you need to edit
    type: "img" or "vid"
    stage: sketch | prototype | failure | process | assembly |
-          build | data | final | test | doc | bonus
+          build | data | final | test | doc | bonus | research
    ============================================================ */
 const PROJECTS = [
   {
@@ -395,7 +396,7 @@ const PROJECTS = [
     title: "Wooden tower load test",
     year: "2024",
     body: [
-      "A thin wooden tower built to carry as much load as possible for as little mass as possible. The final build weighed 0.195 lb and held roughly 90 lb — about 460 times its own weight — stacked in textbooks.",
+      "A thin wooden tower built to carry as much load as possible for as little mass as possible, against about 13 other towers in the class. The final build weighed 0.195 lb and held roughly 90 lb — about 460 times its own weight — stacked in textbooks. Mine was the only one that didn't break.",
       "The tower itself never broke. The test ended when the stack of textbooks got tall enough to start tipping and we couldn't safely add more.",
       "The constraint was material, not cleverness. Getting the load path straight down through the members, and keeping the joints from becoming the weak point, was the whole problem."
     ],
@@ -410,12 +411,39 @@ const PROJECTS = [
     title: "Hydraulic arm & robotics builds",
     year: "2023–2024",
     body: [
-      "A syringe-driven hydraulic arm, designed and built solo for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. I went up against 10 other entries and took first place, with a cash prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
+      "A syringe-driven hydraulic arm, designed and built solo for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. I went up against 10 other entries and took first place, with a $50 prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
     ],
     slides: [
       {type:"img", stage:"sketch", src:"images/hydrolic arm sketch.jpg",     cap:"Linkage and cylinder layout"},
       {type:"img", stage:"final",  src:"images/hydrolic arm.jpg",            cap:"Competition build"},
       {type:"vid", stage:"bonus",  src:"media/robot on line test.mp4",       cap:"Bonus clip — line-following run"}
+    ]
+  },
+  {
+    title: "Wooden bridge load test",
+    year: "2023",
+    body: [
+      "A bridge built from a capped number of popsicle sticks for an engineering class — every stick had to do real work. It held about 85 lb before I stopped adding weight; the next-best bridge in the class held 30 lb, and mine was the only one that didn't break.",
+      "The change that mattered most: notching the cross pieces so the sticks locked into place instead of just resting against each other. That's what kept the joints from sliding once the load went on."
+    ],
+    slides: [
+      {type:"img", stage:"research", src:"images/wooden bridge research.jpg",           cap:"Researching Budapest's Széchenyi Chain Bridge for truss ideas"},
+      {type:"img", stage:"sketch",   src:"images/wooden bridge sketch.jpg",              cap:"Truss options sketched on grid paper"},
+      {type:"img", stage:"final",    src:"images/wooden bridge final front view.jpg",    cap:"Finished bridge"},
+      {type:"img", stage:"final",    src:"images/wooden bridge final left view.jpg",     cap:"Finished bridge, side view"},
+      {type:"vid", stage:"test",     src:"media/wooden bridge final video.mp4",          cap:"Load test — held about 85 lb before I stopped adding weight"}
+    ]
+  },
+  {
+    title: "Handmade architectural home model",
+    year: "2023",
+    body: [
+      "A small-scale home model built by hand for a tech class — cardstock walls, tissue paper, felt, wooden rods, colored paper, cotton, and a lot of hot glue, cut and assembled into a full floor plan, furniture, and exterior landscaping.",
+      "The hardest parts were the smallest ones — a tiny sink, a stuffed animal barely bigger than a fingernail — details that were easy to skip but mattered to me."
+    ],
+    slides: [
+      {type:"img", stage:"build", src:"images/modeled home floor plan.jpg",   cap:"Floor plan, interior walls and doorways"},
+      {type:"vid", stage:"final", src:"media/modeled home final video.mp4",   cap:"Walkthrough of the finished model"}
     ]
   }
 ];
