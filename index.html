@@ -20,7 +20,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emilie Pereira — Mechanical Engineering</title>
+<title>Emilie Pereira · Mechanical Engineering</title>
 <meta name="description" content="Mechanical engineering student at the University of Maryland. Fabrication, CAD, and embedded systems projects.">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="180x180" href="favicon.png">
@@ -44,15 +44,7 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:Karla,system-ui,sans-serif;font-size:clamp(1rem,.97rem+.15vw,1.0625rem);
-  line-height:1.6;
-  /* drafting grid: fine 28px squares with a heavier line every 5th */
-  background-image:
-    linear-gradient(to right, rgba(51,84,107,.14) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(51,84,107,.14) 1px, transparent 1px),
-    linear-gradient(to right, rgba(51,84,107,.065) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(51,84,107,.065) 1px, transparent 1px);
-  background-size:140px 140px, 140px 140px, 28px 28px, 28px 28px;
-  background-attachment:fixed}
+  line-height:1.6}
 img,video{display:block;max-width:100%}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 a{color:inherit;text-underline-offset:.2em}
@@ -252,7 +244,7 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
     <div>
       <h1 id="heroName">Emilie Pereira</h1>
       <p class="role">Mechanical engineering · University of Maryland</p>
-      <p class="lede rv">Below is what I've built so far — the sketches, the
+      <p class="lede rv">Below is what I've built so far: the sketches, the
         prototypes, the prints that failed, and what the finished thing ended up
         looking like.</p>
       <ul class="facts rv">
@@ -286,7 +278,7 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
     <div class="cols rv">
       <div>
         <p>I'm a sophomore studying mechanical engineering at the University of
-        Maryland. The design process is a big part of why I'm in engineering —
+        Maryland. The design process is a big part of why I'm in engineering,
         specifically the middle of it, where a first attempt fails and working out
         why produces something better than the original idea.</p>
         <p>Product design engineering is what I'm working toward: the role between
@@ -318,7 +310,7 @@ footer{border-top:1px solid var(--hair);margin-top:2rem;padding-block:1.2rem 3re
       <p style="max-width:52ch">Open to internships, shop work, and talking with
       anyone who makes physical products for a living.</p>
       <div class="links">
-        <a href="mailto:emp1@terpmail.umd.edu">Email</a>
+        <a href="mailto:emp1@terpmail.umd.edu">emp1@terpmail.umd.edu</a>
         <a href="tel:+12403167454">240-316-7454</a>
         <a href="https://linkedin.com/in/emilie-pereira-b315673a5">LinkedIn</a>
         <a href="https://app.joinhandshake.com/profiles/g3kmwk">Handshake</a>
@@ -356,7 +348,7 @@ const PROJECTS = [
     year: "2024–2025",
     body: [
       "A small-scale fire detection and suppression system built around an Arduino, a heat sensor, a smoke sensor, and a water pump. I furnished the interior with scale furniture so the sensors would trigger under something closer to real conditions than an empty box.",
-      "The hard part was getting the chain of reactions to fire in the right order — heat and smoke sensing, then the alarm, then the suppression system triggering — without knowing ahead of time where smoke would actually travel once it was inside the house, which is what made sensor placement the real problem. It worked: the system detected the fire and started the suppression sequence as soon as the candle was lit."
+      "The hard part was getting the chain of reactions to fire in the right order: heat and smoke sensing, then the alarm, then the suppression system triggering, all without knowing ahead of time where smoke would actually travel once it was inside the house, which is what made sensor placement the real problem. It worked: the system detected the fire and started the suppression sequence as soon as the candle was lit."
     ],
     slides: [
       {type:"img", stage:"sketch",    src:"images/early sketches of fire supression home.jpg",    cap:"Floor plan, furniture and dimensions"},
@@ -379,7 +371,7 @@ const PROJECTS = [
     year: "2024–2025",
     body: [
       "A scale house modeled in Onshape over about two months, printed in parts, with a wood-framed roof and a solar panel driving LED lighting through the interior.",
-      "The prints failed more than once before the walls came out usable. Those failures are here on purpose — they're where I learned about orientation, bed adhesion, and designing a part around how it's actually going to be made."
+      "The prints failed more than once before the walls came out usable. Those failures are here on purpose: they're where I learned about orientation, bed adhesion, and designing a part around how it's actually going to be made."
     ],
     note: "What I'd change now: I designed the walls before thinking about how they'd print. Reorienting them on the plate would have avoided both failures.",
     slides: [
@@ -396,7 +388,7 @@ const PROJECTS = [
     title: "Wooden tower load test",
     year: "2024",
     body: [
-      "A thin wooden tower built to carry as much load as possible for as little mass as possible, against about 13 other towers in the class. The final build weighed 0.195 lb and held roughly 90 lb — about 460 times its own weight — stacked in textbooks. Mine was the only one that didn't break.",
+      "A thin wooden tower built to carry as much load as possible for as little mass as possible, against about 13 other towers in the class. The final build weighed 0.195 lb and held roughly 90 lb, about 460 times its own weight, stacked in textbooks. Mine was the only one that didn't break.",
       "The tower itself never broke. The test ended when the stack of textbooks got tall enough to start tipping and we couldn't safely add more.",
       "The constraint was material, not cleverness. Getting the load path straight down through the members, and keeping the joints from becoming the weak point, was the whole problem."
     ],
@@ -404,26 +396,26 @@ const PROJECTS = [
       {type:"img", stage:"build", src:"images/tower front view.jpg",       cap:"Front elevation"},
       {type:"img", stage:"build", src:"images/tower side view.jpg",        cap:"Side elevation"},
       {type:"img", stage:"data",  src:"images/tower weight.jpg",           cap:"0.195 lb before loading"},
-      {type:"vid", stage:"test",  src:"media/tower integrity video.mp4",   cap:"Loading test — the tower held, the book stack didn't"}
+      {type:"vid", stage:"test",  src:"media/tower integrity video.mp4",   cap:"Loading test: the tower held, the book stack didn't"}
     ]
   },
   {
     title: "Hydraulic arm & robotics builds",
     year: "2023–2024",
     body: [
-      "A syringe-driven hydraulic arm, designed and built solo for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit — most balls in the least time won. I went up against 10 other entries and took first place, with a $50 prize. Alongside it, a set of introductory robotics builds — assembling mechanisms and programming basic control logic, including line following."
+      "A syringe-driven hydraulic arm, designed and built solo for a competition where the task was to pick up and drop as many golf balls as possible within a set time limit: most balls in the least time won. I went up against 10 other entries and took first place, with a $50 prize. Alongside it, a set of introductory robotics builds: assembling mechanisms and programming basic control logic, including line following."
     ],
     slides: [
       {type:"img", stage:"sketch", src:"images/hydrolic arm sketch.jpg",     cap:"Linkage and cylinder layout"},
       {type:"img", stage:"final",  src:"images/hydrolic arm.jpg",            cap:"Competition build"},
-      {type:"vid", stage:"bonus",  src:"media/robot on line test.mp4",       cap:"Bonus clip — line-following run"}
+      {type:"vid", stage:"bonus",  src:"media/robot on line test.mp4",       cap:"Bonus clip: line-following run"}
     ]
   },
   {
     title: "Wooden bridge load test",
     year: "2023",
     body: [
-      "A bridge built from a capped number of popsicle sticks for an engineering class — every stick had to do real work. It held about 85 lb before I stopped adding weight; the next-best bridge in the class held 30 lb, and mine was the only one that didn't break.",
+      "A bridge built from a capped number of popsicle sticks for an engineering class. Every stick had to do real work. It held about 85 lb before I stopped adding weight; the next-best bridge in the class held 30 lb, and mine was the only one that didn't break.",
       "The change that mattered most: notching the cross pieces so the sticks locked into place instead of just resting against each other. That's what kept the joints from sliding once the load went on."
     ],
     slides: [
@@ -431,15 +423,15 @@ const PROJECTS = [
       {type:"img", stage:"sketch",   src:"images/wooden bridge sketch.jpg",              cap:"Truss options sketched on grid paper"},
       {type:"img", stage:"final",    src:"images/wooden bridge final front view.jpg",    cap:"Finished bridge"},
       {type:"img", stage:"final",    src:"images/wooden bridge final left view.jpg",     cap:"Finished bridge, side view"},
-      {type:"vid", stage:"test",     src:"media/wooden bridge final video.mp4",          cap:"Load test — held about 85 lb before I stopped adding weight"}
+      {type:"vid", stage:"test",     src:"media/wooden bridge final video.mp4",          cap:"Load test: held about 85 lb before I stopped adding weight"}
     ]
   },
   {
     title: "Handmade architectural home model",
     year: "2023",
     body: [
-      "A small-scale home model built by hand for a tech class — cardstock walls, tissue paper, felt, wooden rods, colored paper, cotton, and a lot of hot glue, cut and assembled into a full floor plan, furniture, and exterior landscaping.",
-      "The hardest parts were the smallest ones — a tiny sink, a stuffed animal barely bigger than a fingernail — details that were easy to skip but mattered to me."
+      "A small-scale home model built by hand for a tech class: cardstock walls, tissue paper, felt, wooden rods, colored paper, cotton, and a lot of hot glue, cut and assembled into a full floor plan, furniture, and exterior landscaping.",
+      "The hardest parts were the smallest ones: a tiny sink, a stuffed animal barely bigger than a fingernail, details that were easy to skip but mattered to me."
     ],
     slides: [
       {type:"img", stage:"build", src:"images/modeled home floor plan.jpg",   cap:"Floor plan, interior walls and doorways"},
